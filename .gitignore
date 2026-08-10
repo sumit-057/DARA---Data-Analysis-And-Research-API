@@ -1,0 +1,23 @@
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Data Files (Too large for Git)
+*.csv
+*.zip
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/

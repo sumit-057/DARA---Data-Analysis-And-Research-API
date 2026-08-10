@@ -1,0 +1,162 @@
+
+.hero {
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.hero-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.hero-content {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	justify-content: space-between;
+}
+
+.hero-image {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-image img {
+	max-width: 90%;
+	height: auto;
+	border-radius: 16px;
+	box-shadow: 0 10px 40px rgba(99, 102, 241, 0.15);
+}
+
+.hero-text {
+	flex: 1;
+	text-align: left;
+}
+
+.hero h1,
+.hero-title {
+	font-size: 42px;
+	font-weight: 700;
+	color: #111827;
+	margin: 0;
+}
+
+.hero p,
+.hero-subtitle {
+	font-size: 18px;
+	margin: 10px 0 0 0;
+	color: #4b5563;
+	line-height: 1.5;
+}
+
+/* CTA container - alias both class names */
+.hero-buttons,
+.hero-ctas {
+	margin-top: 30px;
+	display: flex;
+	gap: 15px;
+}
+
+/* Button base */
+.btn,
+.primary-btn,
+.secondary-btn {
+	padding: 12px 24px;
+	border-radius: 8px;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 600;
+}
+
+/* Primary / filled */
+.btn.btn-primary,
+.primary-btn,
+.btn-primary {
+	background: #6366f1;
+	color: white;
+	border: none;
+}
+.btn-primary:hover {
+    background: white;
+	color: #6366f1;
+	border: 2px solid #6366f1;
+	transition-duration: 0.3s;
+}
+
+/* Secondary / outlined */
+.btn.btn-ghost,
+.secondary-btn,
+.btn-ghost {
+	background: white;
+	border: 2px solid #6366f1;
+	color: #6366f1;
+}
+
+.hero-features {
+	list-style: none;
+	padding: 0;
+	margin: 24px 0 0 0;
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.hero-features li {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 160px;
+}
+
+.hero-features li strong {
+	display: block;
+	margin-bottom: 6px;
+	color: #111827;
+}
+
+.hero-features li span {
+	color: #6b7280;
+	font-size: 14px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+	.hero-content {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.hero-text {
+		text-align: center;
+	}
+
+	.hero-ctas {
+		justify-content: center;
+	}
+
+	.hero-features {
+		justify-content: center;
+	}
+
+	.hero-features li {
+		align-items: center;
+	}
+
+	.hero p,
+	.hero-subtitle {
+		font-size: 16px;
+	}
+
+	.hero h1,
+	.hero-title {
+		font-size: 32px;
+	}
+
+	.hero-features {
+		gap: 12px;
+	}
+}
+
